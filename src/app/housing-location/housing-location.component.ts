@@ -6,20 +6,7 @@ import { HousingLocation } from "../housinglocation";
   selector: "app-housing-location",
   standalone: true,
   imports: [],
-  template: `
-    <section>
-      <img
-        class="listing-photo"
-        [src]="housingLocation.photo"
-        alt="Foto exterior de {{ housingLocation.name }}"
-        crossorigin
-      />
-      <h2 class="listing-heading">{{ housingLocation.name }}</h2>
-      <p class="listing-location">
-        {{ housingLocation.city }}, {{ housingLocation.state }}
-      </p>
-    </section>
-  `,
+  templateUrl: "housing-location.component.html",
   styleUrls: ["./housing-location.component.css"],
 })
 export class HousingLocationComponent {
